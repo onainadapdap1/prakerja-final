@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/joho/godotenv"
+	_ "github.com/joho/godotenv"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/onainadapdap1/kartu_prakerja/simple_unjuk_ket/prakerja-final/models"
@@ -12,12 +12,12 @@ import (
 
 var DB *gorm.DB
 
-func LoadEnv() {
-	err := godotenv.Load()
-	if err != nil {
-		panic("fail to load file")
-	}
-}
+// func LoadEnv() {
+// 	err := godotenv.Load()
+// 	if err != nil {
+// 		panic("fail to load file")
+// 	}
+// }
 
 type DBConfig struct {
 	Username string
