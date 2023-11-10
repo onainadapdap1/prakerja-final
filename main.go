@@ -8,7 +8,7 @@ import (
 )
 
 func init() {
-	// config.LoadEnv()
+	config.LoadEnv()
 	config.ConnectToDB()
 }
 

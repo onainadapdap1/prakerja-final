@@ -2,6 +2,7 @@ package models
 
 import "time"
 
+// loker will mapping automatically by gorm
 type Loker struct {
 	ID         uint        `json:"id" gorm:"primaryKey"`
 	UserId	   uint        `json:"user_id"`
