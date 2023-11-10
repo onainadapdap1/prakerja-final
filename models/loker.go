@@ -4,6 +4,7 @@ import "time"
 
 // loker will mapping automatically by gorm
 // updated again brooo
+// again bro
 type Loker struct {
 	ID         uint        `json:"id" gorm:"primaryKey"`
 	UserId	   uint        `json:"user_id"`
